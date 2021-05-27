@@ -1,7 +1,7 @@
 # DSPG
 <img align="center" src="https://www.patika.dev/patikaLogo.png"/>
 
-This is a repo for [patika.dev's][patika.dev] [Data Science for Public Good][DPSP] Path/course
+This is a repo for [patika.dev's][patika.dev] [Data Science for Public Good][DPSG] Path/course
 
 
 [patika.dev]:https://www.patika.dev/
