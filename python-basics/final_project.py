@@ -9,18 +9,16 @@ def flatter(non_flatL):
       flat.append(e) #if not list then add it to the flat list.
   return flat
 
-def list_rev(A):
+def reverseList(L):
    '''This function takes a list as an input and makes it reversed'''
-  neww = []
-  def reverser (A_L):
-    for i in A_L:
-      if isinstance(i,list):
-        reverser(i)
-      else:
-        neww.append(A_L[::-1])
-        print(neww)
-        return neww
-  reverser(A)
-  print(neww)
-  return neww
-## it only works with 2d if you use something like A = [[1,2[3,4,5,6]],[3,4],[5,6,7]] it does not work 
+    if len(L) == 0:
+        return
+
+    if len(L) == 1:
+        if isinstance(L[0], list):
+            return [reverseList(L[0])]
+        else:
+            return L
+    else:
+        return reverseList(L[1:]) + reverseList(L[:1])
+
